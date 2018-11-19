@@ -3,7 +3,7 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = MD5($_POST['senha']);
-$connect = mysql_connect('localhost', 'root', '');
+$connect = mysql_connect('localhost', 'admin', '');
 $db = mysql_select_db('aquos');
 $query_select = "SELECT email FROM usuario WHERE email = '$email'";
 $select = mysql_query($query_select, $connect);

@@ -3,7 +3,7 @@
 $entrar = $_POST['entrar'];
 $email = $_POST['email'];
 $senha = MD5($_POST['senha']);
-$connect = mysql_connect('localhost', 'root', '');
+$connect = mysql_connect('localhost', 'admin', '');
 $db = mysql_select_db('aquos');
 
 if(isset($entrar)) {
